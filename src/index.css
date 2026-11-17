@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --studio-blue: #0f38f5;
+    --studio-blue-deep: #0925b8;
+    --studio-cream: #fffbf2;
+    --studio-cream-muted: #f5efe0;
+    --studio-red: #e6192e;
+    --studio-red-dark: #b80d20;
+    --studio-ink: #0a1445;
+  }
+
+  body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--studio-blue);
+    color: var(--studio-cream);
+    overflow-x: hidden;
+  }
+}
+
+.font-display {
+  font-family: 'Antonio', 'Poppins', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-mono-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle royal blue star field pattern on main canvas */
+.studio-star-canvas {
+  background-color: #0f38f5;
+  background-image:
+    radial-gradient(circle at 15% 18%, rgba(255, 255, 255, 0.07) 0%, transparent 40%),
+    radial-gradient(circle at 85% 75%, rgba(9, 37, 184, 0.55) 0%, transparent 48%);
+}
+
+/* Safe area bottom padding for mobile nav */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}

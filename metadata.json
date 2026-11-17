@@ -1,0 +1,8 @@
+{
+  "name": "13 Studio — Mirada On Point",
+  "description": "Aplicación de control y reservas para 13 Studio: cejas, pestañas y depilación. Agenda 7am–7pm, alertas 24h/1h, depósitos y galería.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
